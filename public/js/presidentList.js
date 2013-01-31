@@ -30,7 +30,6 @@ define([
     },
     resources: [
       {
-        resourceId : "presidentList",
         transport  : [
           {
             name       : "amplify",

@@ -51,7 +51,13 @@ define([
     type : "GET",
     status : 200,
     response : function ( settings ) {
-      this.responseText = JSON.stringify( _.toArray( data ) );
+      this.responseText = JSON.stringify(
+        _.toArray(
+          _.map(data, function(pres){
+            return { id: pres.id, name: pres.name }
+          })
+        )
+      );
     }
   } );
 

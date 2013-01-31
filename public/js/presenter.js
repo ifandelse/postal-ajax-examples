@@ -13,8 +13,9 @@ define([
     this.channel = postal.channel(this.namespace);
     if(this.resources && this.resources.length) {
       _.each(this.resources, function(resource){
+        resource.resourceId = this.namespace;
         app.resourceMgr.addResource(resource);
-      });
+      }, this);
     }
     this.initialize.call(this, options);
   };

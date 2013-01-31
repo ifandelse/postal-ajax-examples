@@ -31,7 +31,6 @@ define([
       ko.applyBindings(this.vm, options.target);
     },
     resources: [{
-      resourceId : "president",
       transport  : [
         {
           name       : "amplify",
