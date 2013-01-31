@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>KO + AJAX + postal</title>
+</head>
+<body>
+    <div id="picker" data-bind="visible: isVisible">
+        <select
+            id="president"
+            data-bind="options: items,
+                       optionsCaption: 'Choose One...',
+                       optionsText: 'name',
+                       optionsValue: 'id',
+                       value: selectedItem"
+        ></select>
+    </div>
+    <div id="results" data-bind="visible: isVisible">
+        <div class="row">
+            <span class="label" data-bind="">President:</span>
+            <span data-bind="text: name"></span>
+        </div>
+        <div class="row">
+            <span class="label" data-bind="">Years in Office:</span>
+            <span data-bind="text: term"></span>
+        </div>
+    </div>
+    <!--<script src="js/lib/underscore/underscore.js"></script>-->
+    <script data-main="js/main" src="js/lib/require/require-jquery.js"></script>
+</body>
+</html>

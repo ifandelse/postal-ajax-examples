@@ -1,0 +1,17 @@
+.label {
+    float:left;
+    width: 120px;
+    color: silver;
+}
+
+.row {
+    clear: both;
+}
+
+#results {
+    margin-top: 25px;
+}
+
+body {
+    font-family: Arial;
+}
